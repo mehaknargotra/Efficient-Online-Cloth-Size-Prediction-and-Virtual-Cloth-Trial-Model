@@ -2,3 +2,4 @@
 2) Webcam folder has errors which I faced while tring to include camera in the code.
 3) Here also run welcome.py only
 4)I have renamed some files before uploading to GIT. Check the errors and update filename accordingly.
+5)"pose_iter_440000.caffemodel" file is missing. See Note.txt in coco folder.
