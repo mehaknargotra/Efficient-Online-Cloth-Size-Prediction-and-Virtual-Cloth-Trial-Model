@@ -1,7 +1,7 @@
 from tkinter import *
 import tkinter as tk
 import tkinter.font as tkFont
-#import nandiniopenfile
+#import openfilenew
 main_screen = Tk()  # create a GUI window
 fontStyle = tkFont.Font(family="Lucida Grande", size=50)
 
@@ -25,8 +25,8 @@ l1.grid(row = 0, column = 0, sticky = W, pady = 2)
 #Label(text="").pack()
 def run():
 	print("hello from run!!!")
-	import nandiniopenfilenew
-	nandiniopenfilenew.get_folder()
+	import openfilenew
+	openfilenew.get_folder()
 	
 	
 
