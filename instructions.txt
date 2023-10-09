@@ -1,0 +1,4 @@
+1) Run welcome.py first 
+2) Webcam folder has errors which i faced while tring to include camera in the code
+3) Here also run welcome.py only
+4)I have renamed some files before uploading to GIT. Check the errors and update filename accordingly.
