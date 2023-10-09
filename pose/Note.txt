@@ -1,0 +1,1 @@
+Due to Github restrictions, I couldn't upload "pose_iter_440000.caffemodel" file here. Try to get it from Google. It contains the trained weights of the model.
