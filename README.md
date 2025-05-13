@@ -1,74 +1,105 @@
-# Efficient-Online-Cloth-Size-Prediction-and-Virtual-Cloth-Trial-Model
+# 👕 Virtual Trial Room & Size Prediction System
 
-## Overview
+A patent-published desktop application designed to simulate a **Virtual Fitting Room (VFR)** experience. This system predicts users’ apparel sizes and enables virtual garment try-ons using webcam images—enhancing accessibility, reducing trial room queues, and minimizing return rates in retail and e-commerce.
 
-This project introduces a Virtual Fitting Room (VFR) system designed to predict apparel sizes and enable virtual garment try-on experiences using webcams or smartphones, eliminating the need for physical changing rooms. The VFR employs image processing techniques, including pose estimation and superimposition, to provide real-time, accurate size predictions and visualizations for users. It addresses several issues in traditional apparel shopping, such as long queues, size discrepancies among brands, and the challenge of buying clothes for others.
+---
 
-## Motivation
+## 📌 Overview
 
-Traditional clothing shopping experiences often involve time-consuming trials, long queues at changing rooms, and challenges in purchasing for others or people with disabilities. Additionally, sizing variations across brands contribute to high return rates and inventory management difficulties. The motivation behind this project is to improve and modernize the apparel shopping process by providing an efficient and convenient solution.
+This project leverages **pose estimation**, **image superimposition**, and **real-time processing** to deliver an interactive virtual try-on experience. By analyzing user body proportions via webcam or smartphone, the system predicts size and overlays garments virtually—eliminating the need for physical trials.
 
-## Key Features
+---
 
-1. **Size Prediction**: The VFR estimates the user's apparel size based on body characteristics extracted from webcam or smartphone images. This enables users to select garments with confidence, reducing the need for trying them on physically.
+## 🎯 Motivation
 
-2. **Virtual Try-On**: Users can visualize selected garments superimposed on their own images, helping them make informed decisions about fit, style, and overall look.
+Traditional apparel shopping poses several challenges:
+- Long queues and limited changing room availability
+- Size inconsistencies across brands
+- Inaccessibility for differently-abled users
+- High return rates in online retail
 
-3. **Queue Reduction**: By eliminating the need for physical trials, the VFR reduces queues at changing rooms, resulting in a more pleasant shopping experience, particularly during peak times.
+The VFR system addresses these by offering an efficient, digital, and inclusive alternative.
 
-4. **Brand-Agnostic Sizing**: The system's size predictions are brand-agnostic, meaning users can confidently select sizes across different clothing brands.
+---
 
-5. **Accessibility**: The VFR benefits differently-abled individuals by providing them with an independent and hassle-free shopping experience.
+## ✨ Key Features
 
-## System Workflow
+- **Size Prediction**: Calculates apparel size based on body geometry extracted from images.
+- **Virtual Try-On**: Superimposes garments on the user’s image for visual assessment.
+- **Brand-Agnostic Sizing**: Neutral to brand-specific size definitions.
+- **Queue Reduction**: Reduces physical trial room congestion in retail.
+- **Accessibility**: Offers independence to users with physical limitations.
 
-1. The user stands in front of a camera at a predefined distance, and their image is captured.
+---
 
-2. Pose estimation techniques identify important features, such as the user's physique.
+## 🔄 System Workflow
 
-3. The VFR calculates the garment size based on the distance between reference points (e.g., elbow joints).
+1. The user stands in front of a camera at a predefined distance.
+2. Pose estimation locates key body points (e.g., elbow joints).
+3. The system calculates size based on joint distances.
+4. The user selects garments from a menu.
+5. The system overlays the garment on the user's image using superimposition.
 
-4. The user selects desired garments, and the VFR superimposes these virtual garments onto their image.
+---
 
-5. Users can visualize the fit and style of the selected garments without physically trying them on.
+## 📐 Size Prediction Logic
 
-## Algorithm for Size Prediction
+1. Capture image via webcam.
+2. Apply pose estimation to detect elbow joints.
+3. Measure distance between joints.
+4. Map this value to a size label (S/M/L).
+5. Output predicted size and preview try-on.
 
-The size prediction algorithm follows these steps:
+---
 
-1. Capture the user's image using the camera.
+## 🛠 Tech Stack
 
-2. Use pose estimation to detect and locate key body points, such as elbow joints.
+- **Languages**: Python, MATLAB  
+- **Libraries**: OpenCV, Tkinter  
+- **Functionality**: Pose Estimation, Image Processing, GUI
 
-3. Calculate the distance between the left and right elbow joints.
+---
 
-4. Based on the calculated distance, categorize the garment size as Small, Medium, or Large.
+## 📱 Applications
 
-5. Provide the predicted size to the user.
+- **Retail Stores**: Reduce returns and fitting room congestion.
+- **E-Commerce**: Enable try-before-you-buy online.
+- **Fashion Industry**: Help designers test fit and aesthetics.
+- **Accessibility**: Assist differently-abled shoppers.
+- **Inventory Optimization**: Align sizes with real-time customer data.
 
-## Applications
+---
 
-- **Retail Stores**: Enhance the in-store shopping experience, reduce queues, and decrease return rates.
-- **Online Retail**: Provide virtual try-on capabilities for e-commerce platforms.
-- **Fashion Designers**: Assist fashion designers in look tests and outfit selection.
-- **Differently-abled Individuals**: Enable independent apparel shopping.
-- **Inventory Management**: Track inventory and customer preferences more efficiently.
+## ⚠️ Constraints
 
-## Constraints
+- Requires user to maintain a fixed distance from the camera.
+- Accurate operation needs a static, clutter-free background.
+- Continuous power is necessary for real-time performance.
 
-- The user must stand at a predefined distance from the camera for accurate size prediction.
-- Continuous power supply is required for the system to operate.
-- The background should be plain and constant to avoid interference in image processing.
+---
 
-## Hardware Requirements
+## 💻 Hardware Requirements
 
-1. Camera
-2. LCD monitor (for virtual try-on)
-3. Storage device (for image data)
-4. Image Processing Unit
+- Camera (Webcam or phone)
+- Monitor for try-on preview
+- Image processing-capable system
+- Storage for images and logs
 
-## Conclusion
+---
 
-The Virtual Fitting Room (VFR) project aims to revolutionize the apparel shopping experience by providing accurate size predictions, virtual try-on capabilities, and accessibility benefits. By addressing common shopping challenges and improving efficiency, this system benefits both customers and retailers. Further developments could include expanding the database of available garments and providing personalized clothing recommendations based on user preferences and physique.
+## 📄 Patent Info
 
-Please note that this document provides an overview of the project. For detailed technical documentation and implementation instructions, please refer to the project's Instructions
+This work is **patent-published** by the Government of India:  
+**Application No.** 202121039172  
+**Published in:** Indian Patent Journal (36/2021)  
+**Date:** 3rd September 2021
+
+---
+
+## ✅ Conclusion
+
+The Virtual Trial Room system bridges the gap between convenience and personalization in modern apparel shopping. It minimizes trial errors, streamlines customer journeys, and supports inclusive retail. Future enhancements could include garment recommendation engines and broader brand integration.
+
+---
+
+_For setup, usage instructions, or source files, refer to the codebase and scripts included in this repository._
