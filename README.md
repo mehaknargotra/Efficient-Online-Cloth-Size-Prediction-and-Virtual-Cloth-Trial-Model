@@ -10,96 +10,86 @@ This project leverages **pose estimation**, **image superimposition**, and **rea
 
 ---
 
-## 🎯 Motivation
+## 🧠 How It Works
 
-Traditional apparel shopping poses several challenges:
-- Long queues and limited changing room availability
-- Size inconsistencies across brands
-- Inaccessibility for differently-abled users
-- High return rates in online retail
+<p align="center">
+  <img src="Demo_results/UML.png" alt="System Flow" width="600"/>
+</p>
 
-The VFR system addresses these by offering an efficient, digital, and inclusive alternative.
+1. Capture user image via webcam.  
+2. Detect key body points using pose estimation.  
+3. Calculate distances to predict size (e.g., Small, Medium, Large).  
+4. Superimpose selected garment image onto the user.  
+5. Display predicted size and try-on result on GUI.
+
+---
+
+## 🖼️ Sample Output
+
+### 👤 Pose Estimation with Garment Overlay
+
+<p align="center">
+  <img src="Demo_results/sampleoutput.jpg" alt="Pose Estimation" width="450"/>
+</p>
+
+---
+
+## 💻 Application Screenshots
+
+### Main Interface (Tkinter GUI)
+
+<p align="center">
+  <img src="Demo_results/sc1.png" alt="Main UI" width="400"/>
+</p>
+
+---
+
+### Folder Picker for Garment Selection
+
+<p align="center">
+  <img src="Demo_results/sc2.png" alt="Folder Dialog" width="400"/>
+</p>
+
+---
+
+### Garment Selection Window
+
+<p align="center">
+  <img src="Demo_results/sc3.png" alt="Garment Selector" width="500"/>
+</p>
 
 ---
 
 ## ✨ Key Features
 
-- **Size Prediction**: Calculates apparel size based on body geometry extracted from images.
-- **Virtual Try-On**: Superimposes garments on the user’s image for visual assessment.
+- **Size Prediction**: Automatically suggests garment size based on body measurements from the image.
+- **Virtual Try-On**: Displays the selected garment superimposed on the user image.
 - **Brand-Agnostic Sizing**: Neutral to brand-specific size definitions.
-- **Queue Reduction**: Reduces physical trial room congestion in retail.
-- **Accessibility**: Offers independence to users with physical limitations.
+- **Accessible Interface**: Useful for differently-abled individuals.
+- **Retail & Online Applications**: Reduces returns and improves customer experience.
 
 ---
 
-## 🔄 System Workflow
-
-1. The user stands in front of a camera at a predefined distance.
-2. Pose estimation locates key body points (e.g., elbow joints).
-3. The system calculates size based on joint distances.
-4. The user selects garments from a menu.
-5. The system overlays the garment on the user's image using superimposition.
-
----
-
-## 📐 Size Prediction Logic
-
-1. Capture image via webcam.
-2. Apply pose estimation to detect elbow joints.
-3. Measure distance between joints.
-4. Map this value to a size label (S/M/L).
-5. Output predicted size and preview try-on.
-
----
-
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 - **Languages**: Python, MATLAB  
 - **Libraries**: OpenCV, Tkinter  
-- **Functionality**: Pose Estimation, Image Processing, GUI
-
----
-
-## 📱 Applications
-
-- **Retail Stores**: Reduce returns and fitting room congestion.
-- **E-Commerce**: Enable try-before-you-buy online.
-- **Fashion Industry**: Help designers test fit and aesthetics.
-- **Accessibility**: Assist differently-abled shoppers.
-- **Inventory Optimization**: Align sizes with real-time customer data.
-
----
-
-## ⚠️ Constraints
-
-- Requires user to maintain a fixed distance from the camera.
-- Accurate operation needs a static, clutter-free background.
-- Continuous power is necessary for real-time performance.
-
----
-
-## 💻 Hardware Requirements
-
-- Camera (Webcam or phone)
-- Monitor for try-on preview
-- Image processing-capable system
-- Storage for images and logs
+- **Functionality**: Pose Estimation, Image Processing, GUI Design
 
 ---
 
 ## 📄 Patent Info
 
-This work is **patent-published** by the Government of India:  
-**Application No.** 202121039172  
-**Published in:** Indian Patent Journal (36/2021)  
-**Date:** 3rd September 2021
+- **Application No.** 202121039172  
+- **Published in:** Indian Patent Journal (36/2021)  
+- **Date:** 3rd September 2021
 
 ---
 
 ## ✅ Conclusion
 
-The Virtual Trial Room system bridges the gap between convenience and personalization in modern apparel shopping. It minimizes trial errors, streamlines customer journeys, and supports inclusive retail. Future enhancements could include garment recommendation engines and broader brand integration.
+The Virtual Trial Room system bridges the gap between convenience and personalization in apparel shopping. It minimizes trial errors, streamlines customer journeys, and supports inclusive retail. Future enhancements could include a larger garment database and AI-driven recommendations.
 
 ---
 
-_For setup, usage instructions, or source files, refer to the codebase and scripts included in this repository._
+_For setup and source code, refer to the main script files and folders in this repository._
